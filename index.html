@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Interactive rating component</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="rating-card">
+      <span class="star-icon circle center"><i class="fa-solid fa-star"></i></span>
+      <h1>How did we do?</h1>
+      <p class="rating-text">Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+      <form id="rating-form">
+        <div class="rating">
+          <button type="button" class="rating-numbers circle" value="1">1</button>
+          <button type="button" class="rating-numbers circle" value="2">2</button>
+          <button type="button" class="rating-numbers circle" value="3">3</button>
+          <button type="button" class="rating-numbers circle" value="4">4</button>
+          <button type="button" class="rating-numbers circle" value="5">5</button>
+        </div>
+        <button type="submit" class="btn center">Submit</button>
+      </form>
+    </div>
+    <div class="thank-you-card center hidden">
+        <img src="./images/illustration-thank-you.svg" alt="thank-you-img" class="thank-you-img">
+        <span class="alert"></span>
+        <h1>Thank you!</h1>
+        <p class="rating-text thank-you-text"> We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!</p>
+    </div>
+  </section>  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Daisy Pwint</a>.
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
