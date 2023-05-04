@@ -15,12 +15,16 @@ body{
     font-family: 'Overpass', sans-serif;
     background-color: var(--bg-primary);
     color:var(--clr-white);
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 section{
     background-color:var(--bg-secondary);
-    flex-direction: column;
     max-width: 360px;
-    margin: 50px auto;
+    margin-bottom: 20px;
     padding:30px 23px;
     border-radius: 20px;
 }  
